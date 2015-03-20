@@ -2,7 +2,7 @@ Name:			dbgl
 Summary:	        DOSBox Game Launcher
 URL:			http://home.quicknet.nl/qn/prive/blankendaalr/dbgl/
 Version:		0.79
-Release:		1%{?dist}
+Release:		2%{?dist}
 BuildArch:		noarch
 License:		GPLv2
 BuildRequires:	eclipse-swt
@@ -68,7 +68,7 @@ Icon=dbgl
 Terminal=false
 Name=DOSBox Game Launcher
 Comment=%{summary}
-Categories=Games;
+Categories=Game;
 EOF
 
 desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
@@ -80,6 +80,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_datadir}/applications/%{name}.desktop
 
 %changelog
+* Fri Mar 20 2015 Oleg Kishinskiy <legunt@yandex.ru> - 0.79-2
+- FIX change category
+
 * Fri Mar 20 2015 Oleg Kishinskiy <legunt@yandex.ru> - 0.79-1
 - update for new vertion
 - change category
