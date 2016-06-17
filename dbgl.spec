@@ -1,8 +1,8 @@
 Name:			dbgl
 Summary:	        DOSBox Game Launcher
 URL:			http://home.quicknet.nl/qn/prive/blankendaalr/dbgl/
-Version:		0.79
-Release:		2%{?dist}
+Version:		0.80
+Release:		1%{?dist}
 BuildArch:		noarch
 License:		GPLv2
 BuildRequires:	eclipse-swt
@@ -21,7 +21,7 @@ Requires:               java-headless >= 1:1.7.0
 Requires:		jpackage-utils
 Requires:		SDL_net
 Requires:		SDL_sound
-Source0:		http://members.quicknet.nl/blankendaalr/dbgl/download/src079.zip
+Source0:		http://members.quicknet.nl/blankendaalr/dbgl/download/src080.zip
 Source2:		%{name}.png
 Source3:		%{name}
 
@@ -80,6 +80,8 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_datadir}/applications/%{name}.desktop
 
 %changelog
+* Fri Jun 17 2015 Oleg Kishinskiy <legunt@yandex.ru - 0.80-1
+- Udate for new vertion
 * Fri Mar 20 2015 Oleg Kishinskiy <legunt@yandex.ru> - 0.79-2
 - FIX change category
 
